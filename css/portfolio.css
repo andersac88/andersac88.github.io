@@ -26,7 +26,7 @@
 .Container {
     margin-left: auto;
     margin-right: auto;
-    width: 875px;
+    width: 960px;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -35,7 +35,7 @@
 }
 
 img {
-    height: 220px;
+    height: 250px;
     margin-bottom: 30px;
     border-radius: 12%;
 }
