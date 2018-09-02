@@ -137,3 +137,7 @@ img {
     width: 100%;
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
+
+.ImageNone {
+    visibility: hidden;
+}
