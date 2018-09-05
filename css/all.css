@@ -54,6 +54,7 @@ a:hover {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
     padding: 27.5px 10px 25.5px 10px;
     box-sizing: border-box;
+    height: 75px;
 }
 
 .About {
