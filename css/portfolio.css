@@ -3,7 +3,6 @@
     margin-right: auto;
     background-color: #666666;
     width: 960px;
-    height: auto;
     border-style: solid;
     border-color: #cccccc;
     border-width: 2px;
@@ -13,7 +12,6 @@
 
 .MyPortfolio {
     font-size: 20px;
-    margin: 0;
     color: #f88e17;
     padding: 20px 0px 20px 0px;
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
@@ -24,10 +22,6 @@
 }
 
 .Container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-    height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
