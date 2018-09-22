@@ -59,3 +59,33 @@ textarea {
 input[type=submit]:hover {
     background-color: #f88f17d2;
 }
+
+@media screen and (max-width: 980px) {
+    .Contact-Set {
+    width: 600px;
+    margin-left: 40px;
+}   
+    textarea {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .Contact-Set {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: auto;
+    }   
+        textarea {
+        width: 100%;
+    } 
+
+
+@media screen and (max-width: 640px) {
+    .Contact-Set {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }   
+        textarea {
+        width: 100%;
+    } 

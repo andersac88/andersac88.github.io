@@ -101,12 +101,74 @@ img {
     visibility: hidden;
 }
 
+.ImageNo {
+    visibility: hidden;
+}
+
 .Place {
     padding: 8px 0;
     font-size: 18px;
-    top: 180px;
+    top: 65%;
     background-color: #f88e17;
     color: #ffffff;
     width: 100%;
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
+
+@media screen and (max-width: 980px) {
+    .Portfolio-Set {
+        width: 600px;
+        margin-left: 40px;
+    }
+
+
+
+    .ImageNone {
+        display: none;
+    }
+
+
+@media screen and (max-width: 768px) {
+    .Portfolio-Set {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+}   
+
+@media screen and (max-width: 640px) {
+    .Portfolio-Set {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        height: auto;
+        background-color: #666666;
+
+    }
+    img {
+        height: 450px;
+    }
+
+    .ImageNo {
+        display: none;
+    }
+
+    .ImageNone {
+        display: none;
+    }
+
+
+}
+
+    .Portfolio-Set
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+
+    
+    background-color: #f88e17;
+    animation-name: example;
+    animation-duration: infinte;
+    animation-iteration-count: infinite;

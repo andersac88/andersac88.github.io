@@ -41,13 +41,19 @@ a:hover {
     box-sizing: border-box;
 }
 
+.Header-Right {
+    display: inline;
+}
+
 .Header {
     position: absolute;
     box-sizing: border-box;
 }
 
-.Name {
+.Header-Name {
     font-size: 20px;
+    display: inline-block;
+    width: 251.91px;
     margin: 0;
     color: #ffffff;
     background-color: #f88e17;
@@ -73,10 +79,12 @@ a:hover {
     border-style: solid;
     border-color: #777777;
     border-width: 0px .5px 0px .5px;
+    
 }
 
 .Contact {
     right: 0px;
+    position: absolute;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
     padding: 28.5px 0px 26.5px 10px;
 }
@@ -123,4 +131,84 @@ html {
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
+}
+
+@media screen and (max-width: 980px) {
+.Header-Box{
+    left: 40px;
+    margin-right: 50px;
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 640px) {
+.Header-Name {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.Header-Set {
+    margin-bottom: 80px;
+}
+
+.Header-Box{
+    left: 0px;
+    margin-right: 0px;
+    width: auto;
+}
+
+.Header-Right {
+    display: flex;
+    justify-content: center;
+    background-color: #666666;
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    border-bottom-width: 2px;
+    margin-bottom: 40px;
+}
+
+.Header {
+    align-self: center;
+    position: relative;
+    right: auto;
+}
+
+.Header-Set {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.Header-Right {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.Header-Name {
+    animation-name: another;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.footer {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {background-color: #666666;}
+    to {background-color: #f88e17;}
+}
+
+@keyframes another {
+    from {background-color: #f88e17;}
+    to {background-color: #666666;}
+}
 }

@@ -39,3 +39,23 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5); 
 }
+
+@media screen and (max-width: 980px) {
+    .AboutMe-Set {
+        width: 600px;
+        margin-left: 40px;
+    }   
+
+@media screen and (max-width: 768px) {
+    .AboutMe-Set {
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }   
+
+@media screen and (max-width: 640px) {
+    .AboutMe-Set {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
