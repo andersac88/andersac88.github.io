@@ -14,28 +14,26 @@
         crossorigin="anonymous">
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cormorant" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">Andrew C. Andersen</a>
+        <a class="navbar-brand" href="../index.html">Andrew C. Andersen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="../bio.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./bio.html">Bio<span class="sr-only">(current)</span></a>
-                        <a class="dropdown-item" href="./resume.html">Résumé</a>
+                        <a class="dropdown-item" href="../index.html">Bio<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="../resume.html">Résumé</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -43,58 +41,43 @@
                         aria-haspopup="true" aria-expanded="false">
                         Portfolio
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./Portfolio/Trivia.html">Trivia</a>
-                        <a class="dropdown-item" href="./Portfolio/GifTastic.html">GifTastic</a>
-                        <a class="dropdown-item" href="./Portfolio/Hangman.html">Hangman</a>
-                        <a class="dropdown-item" href="./Portfolio/TrainScheduler.html">Train Scheduler</a>
+                    <div class="dropdown-menu drops" aria-labelledby="navbarDropdown">
+                        <!--<a class="dropdown-item" href="./Trivia.html">Trivia</a>-->
+ 
                     </div>
                 </li>
                 <li class="nav-item active">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                </li>
             </ul>
+
         </div>
     </nav>
+
+
     <div class="container">
         <div class="row pt-5">
             <div class="col-sm-3">
-                <h3><u>About</u></h3>
-                <a href="#">
-                    <h4 class="myFont">Bio</h4>
-                </a>
-                <a href="./resume.html">
-                    <h4 class="myFont">Résumé</h4>
-                </a>
-
+                <h3 class="app"><u>Applications</u></h3>
             </div>
-            <div class="col-sm-3">
-                <img class="andyImg rounded img-thumbnail" src="./Images/Andy.jpeg" alt="">
-                <img class="neilImg rounded img-thumbnail" src="./Images/AndrewDeGrasse.png" alt="">
-
-
+            <div class="col-sm-9 text-center">
+                <h3>GifTastic Simpsons</h3>
+                <h6 class="myFont">This is a gif generator that utilizes the Giphy API to populate gifs of Simpson's
+                    characters</h6>
+                    <div class="appBtn">
             </div>
-            <div class="col-sm-6">
-                <p>My name is Andrew Andersen and I am 30 years old. I currently reside in Arlington Heights with
-                    my fiancée, Ashley, our two cats, Maggie and Millie, and our miniature pincher, Mia.</p>
-                <p>I am a graduate of Miami University in Oxford Ohio and went to university with the intention of
-                    undertaking a career in medicine however towards the end of my tenure I realized I wasn't destined
-                    to be a
-                    doctor.</p>
-                <p>Following graduation, still unsure of my purpose, I followed in the footsteps of my father and
-                    began working in property management. While this path has afforded me a comfortable lifestyle I
-                    find
-                    that the field lacks a certain mental stimulation that I desire.</p>
-                <p>Ever eager to learn new things, I am fortunate enough to have come across Northwestern's Coding
-                    Bootcamp. Unlike other programs, Northwestern has permitted me to learn a new skill set on a
-                    part—time
-                    basis.</p>
-                <p>While it would be nice if this class ultimately leads me to a new more fulfilling career, I
-                    am excited to learn regardless.</p>
+                <hr>
+                <div class="appPicture"></div>
+
+                <hr>
+                <h5 class="text-left"><u>Details:</u></h5>
 
             </div>
         </div>
     </div>
+
+
+
 
 
     <div class="card-footer text-center">
@@ -107,15 +90,13 @@
 
         </div>
 
+
+
     <!------------------        Script         --------------------->
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Google Maps-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-nghbSyP_qhRsJtnhK7NZrne-JpaWaeQ&callback=initMap">
-
-    </script>
     <!--app.js-->
-    <script src="./map.js"></script>
+    <script src="../attempt.js"></script>
     <!--Bootstrap-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

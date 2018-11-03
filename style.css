@@ -1,5 +1,5 @@
 html, body {
-    background-image: url(./Images/brushed_alu_dark.png)
+    background-image: url(./Images/gravel.png)
 }
 
 .navbar, .navbar-brand {
@@ -30,7 +30,7 @@ span {
     letter-spacing: 20px;
 }
 
-h3 {
+h3, h5 {
     font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -41,7 +41,7 @@ h6 {
 
 p {
     font-family: 'Cormorant', serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 li {
@@ -51,6 +51,10 @@ li {
 #map {
     height: 500px;
     width: auto;
+}
+
+.resList {
+    font-size: 18px;
 }
 
 
@@ -86,7 +90,7 @@ li {
 }
 
 .appPic {
-    height: 50%;
+    width: 100%;
     margin-top: 20px;
 }
 
