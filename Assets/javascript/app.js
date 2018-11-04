@@ -1,24 +1,24 @@
 let Applications = [{
     App: "Hangman",
-    Image: "./Images/Medieval Hangman.png",
+    Image: "./Assets/Images/Medieval Hangman.png",
     Title: "Medieval Hangman",
     appURL: "https://andersac88.github.io/Word-Guess-Game/",
     codeURL: "https://github.com/andersac88/Word-Guess-Game"
 }, {
     App: "Giftastic",
-    Image: "./Images/Simpsons.png",
+    Image: "./Assets/Images/Simpsons.png",
     Title: "Giftastic Simpsons",
     appURL: "https://andersac88.github.io/GifTastic/",
     codeURL: "https://github.com/andersac88/GifTastic/"
 }, {
     App: "Trivia",
-    Image: "./Images/WW2 Trivia.png",
+    Image: "./Assets/Images/WW2 Trivia.png",
     Title: "Medieval Trivia",
     appURL: "https://andersac88.github.io/TriviaGame/",
     codeURL: "https://github.com/andersac88/TriviaGame/"
 }, {
     App: "Train Scheduler",
-    Image: "./Images/TrainScheduler.png",
+    Image: "./Assets/Images/TrainScheduler.png",
     Title: "Train Scheduler",
     appURL: "https://andersac88.github.io/Train-Scheduler/",
     codeURL: "https://github.com/andersac88/Train-Scheduler/"   
