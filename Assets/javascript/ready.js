@@ -17,10 +17,18 @@ function renderPage() {
     $(".appBtn").append(codeButton);
     let buttonLink = localStorage.getItem("link");
     let linkBTN = $("<button>");
-    linkBTN.attr("data-code", buttonLink);
-    linkBTN.addClass("btn btn-outline-dark m-3 coder")
+    linkBTN.attr("data-URL", buttonLink);
+    linkBTN.addClass("btn btn-outline-dark m-3 hyperlink")
     linkBTN.attr("type", "button");
-    linkBTN.text("View Code")
+    linkBTN.text("Try App")
     $(".appBtn").append(linkBTN);
+    let appDescript = localStorage.getItem("description");
+    let appDescription = $("<div>");
+    appDescription.html(appDescript);
+    $(".details").append(appDescription);
+    let appTech = localStorage.getItem("tech");
+    let appTechnology = $("<div>");
+    appTechnology.html(appTech);
+    $(".tech").append(appTechnology);
 }
 

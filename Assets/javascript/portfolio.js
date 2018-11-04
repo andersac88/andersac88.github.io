@@ -6,11 +6,8 @@
         let image = $(this).attr("data-image");
         let code = $(this).attr("data-code");
         let link = $(this).attr("data-URL");
-
-        console.log(title);
-        console.log(image);
-        console.log(code);
-        console.log(link);
+        let descript = $(this).attr("data-description");
+        let tech = $(this).attr("data-tech");
 
   
         // Clear localStorage
@@ -21,6 +18,8 @@
         localStorage.setItem("image", image);
         localStorage.setItem("code", code);
         localStorage.setItem("link", link);
+        localStorage.setItem("description", descript);
+        localStorage.setItem("tech", tech);
       };
   
 function amendDropList () {

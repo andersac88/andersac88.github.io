@@ -3,34 +3,44 @@ let Applications = [{
     Image: "./Assets/Images/Medieval Hangman.png",
     Title: "Medieval Hangman",
     appURL: "https://andersac88.github.io/Word-Guess-Game/",
-    codeURL: "https://github.com/andersac88/Word-Guess-Game"
+    codeURL: "https://github.com/andersac88/Word-Guess-Game",
+    Details: "<p>This is your standard game of hangman but with a medieval theme</p><p>Users start the game by pressing any letter key, which will be the first guess</p><p>Each subsequent key stroke will be logged as either a correct or incorrect guess</p><Correct guesses will be input into the guess word. Incorrect guesses will be logged and one will be deducted from your remaining guesses.</p><p>If you run out of guesses, you lose the round, if you guess the word you win.</p>",
+    Technology: "<p>Javascript, Google Fonts, HTML and CSS</p>"
 }, {
     App: "Giftastic",
     Image: "./Assets/Images/Simpsons.png",
     Title: "Giftastic Simpsons",
     appURL: "https://andersac88.github.io/GifTastic/",
-    codeURL: "https://github.com/andersac88/GifTastic/"
+    codeURL: "https://github.com/andersac88/GifTastic/",
+    Details: "<p>This is a program to run gifs from the Giphy API</p><p>By clicking the name of a Simpsons character in the top row 10 still images will be displayed below. If the name is double clicked, 20 images will be displayed.</p><p>If you click on one of the still images, they will become animated. If clicked again, it will freeze.</p><p>If you would like to see Gifs of a character that is not included, simply type their name in the search bar under 'Add a Character' and click submit. A button will populate above and if clicked, 10 stills will be displayed below and if double clicked, 20 stills will be displayed. As referenced above, if you click on the stills they will become animated.</p><p>To add a gif to favorites, double cick on it. To display the favorites, click on the favorites button, to remove a gif from this lists click on the image.</p>",
+    Technology: "<p>Giphy API, jQuery, Google Fonts, Bootstrap, HTML and CSS</p>"
 }, {
     App: "Trivia",
     Image: "./Assets/Images/WW2 Trivia.png",
     Title: "Medieval Trivia",
     appURL: "https://andersac88.github.io/TriviaGame/",
-    codeURL: "https://github.com/andersac88/TriviaGame/"
+    codeURL: "https://github.com/andersac88/TriviaGame/",
+    Details: "<p>This is a timed trivia game.</p><p>Users are presented with a question and four answers. They are given 15 seconds to select an answer.</p><p>If an incorrect answer is selected, the user is notified that their selection was incorrect and the correct answer will be displayed along with an image related to the correct answer. If a correct answer is selected, the user is notified that they were correct and an image related to the correct answer will be display. If the user fails to make a selection within the alloted 15 seconds, they will be notified that time has expired and the correct answer, along with an image related to the correct answer, will be displayed.</p><p>Once the user has been presented with all of the questions the game ends and the total number of correct answers, incorrect answers and unanswered questions will be displayed, along with a replay button.</p>",
+    Technology: "<p>jQuery, Google Fonts, Bootstrap, HTML and CSS</p>"
 }, {
     App: "Train Scheduler",
     Image: "./Assets/Images/TrainScheduler.png",
     Title: "Train Scheduler",
     appURL: "https://andersac88.github.io/Train-Scheduler/",
-    codeURL: "https://github.com/andersac88/Train-Scheduler/"   
+    codeURL: "https://github.com/andersac88/Train-Scheduler/" ,  
+    Details: "<p>This application is a fictional train scheduling app</p><p>You input a 'Train Name', a 'Destination', the time of the first train and their frequency. The app will then output when the next tain will arrive and how many minutes that is from the current time, which is displayed in the Jumbotron.</p><p>Trains can also be deleted by clicking the respective Delete button.</p>",
+    Technology: "<p>Firebase, moment JS, Google Fonts, CSS, Bootstrap, HTML and jQuery</p>"
 }];
 
 function appList() {
     for (let i = 0; i < Applications.length; i++) {
         let a = $("<a>")
-        a.html(`<h4 class='myFont'>${Applications[i].App}</h4>`)
+        a.html(`<h4 class='unders myFont'>${Applications[i].App}</h4>`)
         a.addClass("application")
         a.attr("data-title", `${Applications[i].Title}`)
+        a.attr("data-description", `${Applications[i].Details}`)
         a.attr("data-URL", `${Applications[i].appURL}`)
+        a.attr("data-tech", `${Applications[i].Technology}`)
         a.attr("data-code", `${Applications[i].codeURL}`)
         a.attr("data-image", `${Applications[i].Image}`)
         $(".app").append(a);
@@ -40,10 +50,12 @@ function appList() {
 function dropList() {
     for (let j = 0; j < Applications.length; j++) {
         let b = $("<a>")
-        //b.attr("href", "./portfolio.html")
+      
         b.text(`${Applications[j].App}`)
         b.addClass("dropdown-item application dropItem")
         b.attr("data-title", `${Applications[j].Title}`)
+        b.attr("data-description", `${Applications[j].Details}`)
+        b.attr("data-tech", `${Applications[j].Technology}`)
         b.attr("data-URL", `${Applications[j].appURL}`)
         b.attr("data-code", `${Applications[j].codeURL}`)
         b.attr("data-image", `${Applications[j].Image}`)
@@ -51,9 +63,24 @@ function dropList() {
     }
 }
 
-function renderDescription() {
+function renderText() {
+   $(".tech").empty();
+   $(".details").empty();
     let applicationTitle = $(this).attr("data-title");
     $(".title").text(applicationTitle);
+    let c = $("<div>");
+    let applicationDescription = $(this).attr("data-description");
+    c.html(applicationDescription)
+    $(".details").append(c);
+    let d = $("<div>");
+    let applicationTechnology = $(this).attr("data-tech")
+    d.html(applicationTechnology);
+    $(".tech").append(d);
+}
+
+function renderDetails() {
+    let applicationDescription = $(this).attr("data-description");
+    $(".details").html(applicationDescription);
 }
 
 
@@ -92,7 +119,7 @@ function renderAppButton () {
 appList();
 dropList();
 $(document).on("click", ".application", renderImage);
-$(document).on("click", ".application", renderDescription);
+$(document).on("click", ".application", renderText);
 $(document).on("click", ".application", renderCodeButton);
 $(document).on("click", ".application", renderAppButton);
 $(document).on("click", ".hyperlink", function(){
