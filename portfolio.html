@@ -14,12 +14,12 @@
         crossorigin="anonymous">
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cormorant" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">Andrew C. Andersen</a>
+        <a class="navbar-brand" href="./index.html">Andrew C. Andersen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,13 +27,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="../bio.html" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="./bio.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         About
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../index.html">Bio<span class="sr-only">(current)</span></a>
-                        <a class="dropdown-item" href="../resume.html">Résumé</a>
+                        <a class="dropdown-item" href="./index.html">Bio<span class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="./resume.html">Résumé</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -41,15 +41,13 @@
                         aria-haspopup="true" aria-expanded="false">
                         Portfolio
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./Trivia.html">Trivia</a>
-                        <a class="dropdown-item" href="./GifTastic.html">GifTastic</a>
-                        <a class="dropdown-item" href="./Hangman.html">Hangman</a>
-                        <a class="dropdown-item" href="#">Train Scheduler</a>
+                    <div class="dropdown-menu drops" aria-labelledby="navbarDropdown">
+                        <!--<a class="dropdown-item" href="./Trivia.html">Trivia</a>-->
+
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="../contact.html">Contact</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
             </ul>
 
@@ -60,29 +58,19 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-sm-3">
-                <h3><u>Applications</u></h3>
-                <a href="./Trivia.html">
-                    <h4 class="myFont">Trivia</h4>
-                </a>
-                <a href="./GifTastic.html">
-                    <h4 class="myFont">GifTastic</h4>
-                </a>
-                <a href="./Hangman.html">
-                    <h4 class="myFont">Hangman</h4>
-                </a>
-                <a href="#">
-                    <h4 class="myFont">Train Scheduler</h4>
-                </a>
+                <h3 class="app"><u>Applications</u></h3>
             </div>
             <div class="col-sm-9 text-center">
-                <h3>Train Scheduler</h3>
-                <h6 class="myFont">This application determines ETA for hypothetical trains</h6>
-                <button type="button" class="btn btn-outline-dark m-3 trainApp">Try Application</button>
-                <button type="button" class="btn btn-outline-dark m-3 trainCode">View Code</button>
+                <h3 class="title"></h3>
+                <h6 class="myFont"></h6>
+                <div class="appBtn">
+                </div>
                 <hr>
-                <img class="appPic rounded simpsons" src="../Images/TrainScheduler.png" alt="Train Scheduler Screenshot">
+                <div class="appPicture"></div>
+
                 <hr>
                 <h5 class="text-left"><u>Details:</u></h5>
+
             </div>
         </div>
     </div>
@@ -92,22 +80,26 @@
 
 
     <div class="card-footer text-center">
-            <a class="linkedin" href="https://www.linkedin.com/in/andrew-andersen-5149323a"><i class="fab fa-linkedin-in linkedin"></i><span
-                    class="linkedinText">Visit Andrew's Linkedin Profile</span></a>
-            <a class="resume" href="./Documents/Resume.docx.pdf" download="Andersen Résumé"><i class="fas fa-file-download"></i><span
-                    class="resumeText">Download Andrew's Résumé</span></a>
-            <a class="resume" href="https://github.com/andersac88/"><i class="fab fa-github"></i><span class="resumeText">Visit Andrew's Github</span></a>
-            <a class="resume" href="mailto:andersac88@gmail.com"> <i class="fas fa-envelope"></i><span class="resumeText">E-mail Andrew</span></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/andrew-andersen-5149323a"><i class="fab fa-linkedin-in linkedin"></i><span
+                class="linkedinText">Visit Andrew's Linkedin Profile</span></a>
+        <a class="resume" href="./Documents/Resume.docx.pdf" download="Andersen Résumé"><i class="fas fa-file-download"></i><span
+                class="resumeText">Download Andrew's Résumé</span></a>
+        <a class="resume" href="https://github.com/andersac88/"><i class="fab fa-github"></i><span class="resumeText">Visit
+                Andrew's Github</span></a>
+        <a class="resume" href="mailto:andersac88@gmail.com"> <i class="fas fa-envelope"></i><span class="resumeText">E-mail
+                Andrew</span></a>
 
-        </div>
+    </div>
 
 
 
     <!------------------        Script         --------------------->
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--ready.js-->
+    <script src="./ready.js"></script>
     <!--app.js-->
-    <script src="../app.js"></script>
+    <script src="./app.js"></script>
     <!--Bootstrap-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
