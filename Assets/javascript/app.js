@@ -50,7 +50,6 @@ function appList() {
 function dropList() {
     for (let j = 0; j < Applications.length; j++) {
         let b = $("<a>")
-      
         b.text(`${Applications[j].App}`)
         b.addClass("dropdown-item application dropItem")
         b.attr("data-title", `${Applications[j].Title}`)
@@ -63,40 +62,40 @@ function dropList() {
     }
 }
 
-function renderText() {
+function renderText(scope) {
    $(".tech").empty();
    $(".details").empty();
-    let applicationTitle = $(this).attr("data-title");
+    let applicationTitle = $(scope).attr("data-title");
     $(".title").text(applicationTitle);
     let c = $("<div>");
-    let applicationDescription = $(this).attr("data-description");
+    let applicationDescription = $(scope).attr("data-description");
     c.html(applicationDescription)
     $(".details").append(c);
     let d = $("<div>");
-    let applicationTechnology = $(this).attr("data-tech")
+    let applicationTechnology = $(scope).attr("data-tech")
     d.html(applicationTechnology);
     $(".tech").append(d);
 }
 
-function renderDetails() {
-    let applicationDescription = $(this).attr("data-description");
+function renderDetails(scope) {
+    let applicationDescription = $(scope).attr("data-description");
     $(".details").html(applicationDescription);
 }
 
 
-function renderImage () {
+function renderImage (scope) {
     $(".appPicture").empty();
-    console.log(this);
-    let applicationPic = $(this).attr("data-image")
+    console.log(scope);
+    let applicationPic = $(scope).attr("data-image")
     let img = $("<img>");
     img.addClass("appPic")
     img.attr("src", applicationPic);
     $(".appPicture").append(img);
 }
 
-function renderCodeButton () {
+function renderCodeButton (scope) {
     $(".appBtn").empty();
-    let btnCode = $(this).attr("data-code")
+    let btnCode = $(scope).attr("data-code")
     let codeBTN = $("<button>");
     codeBTN.attr("data-code", btnCode)
     codeBTN.addClass("btn btn-outline-dark m-3 coder")
@@ -105,8 +104,8 @@ function renderCodeButton () {
     $(".appBtn").append(codeBTN);
 }
 
-function renderAppButton () {
-    let btnURL = $(this).attr("data-URL")
+function renderAppButton (scope) {
+    let btnURL = $(scope).attr("data-URL")
     let urlBTN = $("<button>");
     urlBTN.attr("data-URL", btnURL)
     urlBTN.attr("type", "button");
@@ -118,10 +117,16 @@ function renderAppButton () {
 
 appList();
 dropList();
-$(document).on("click", ".application", renderImage);
-$(document).on("click", ".application", renderText);
-$(document).on("click", ".application", renderCodeButton);
-$(document).on("click", ".application", renderAppButton);
+$(document).on("click", ".application", function(){
+    let scope = this
+    renderImage(scope);
+    renderText(scope);
+    renderCodeButton(scope);
+    renderAppButton(scope);
+});   
+// $(document).on("click", ".application", renderText);
+// $(document).on("click", ".application", renderCodeButton);
+// $(document).on("click", ".application", renderAppButton);
 $(document).on("click", ".hyperlink", function(){
     window.location=($(this).attr("data-URL"))
 })
