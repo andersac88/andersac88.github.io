@@ -30,7 +30,24 @@ let Applications = [{
     codeURL: "https://github.com/andersac88/Train-Scheduler/" ,  
     Details: "<p>This application is a fictional train scheduling app</p><p>You input a 'Train Name', a 'Destination', the time of the first train and their frequency. The app will then output when the next tain will arrive and how many minutes that is from the current time, which is displayed in the Jumbotron.</p><p>Trains can also be deleted by clicking the respective Delete button.</p>",
     Technology: "<p>Firebase, moment JS, Google Fonts, CSS, Bootstrap, HTML and jQuery</p>"
-}];
+}, {
+    App: "LIRI Bot",
+    Image: "./Assets/Images/TrainScheduler.png",
+    Title: "Language Interpretation and Recognition Interface Bot",
+    appURL: "#",
+    codeURL: "https://github.com/andersac88/LIRI_Bot" ,  
+    Details: "<p>This is a a command line node application that takes in specific parameters [concert-this, spotify-this-song, movie-this & do-what-it-says] and gives back information pulled from various APIs.</p>",
+    Technology: "<p>jsNode, javascript, NPMs and APIs</p>"
+}, {
+    App: "Bamazon",
+    Image: "./Assets/Images/TrainScheduler.png",
+    Title: "Bamazon - MySQL Inquirer",
+    appURL: "#",
+    codeURL: "https://github.com/andersac88/Node.js-MySQL" ,  
+    Details: "<p>This is a MySQL based application that pulls displays data pulled from a database on the command line which users interact with using the inquirer NPM.",
+    Technology: "<p>jsNode, javascript, NPMs and MySQL</p>"
+} 
+];
 
 function appList() {
     for (let i = 0; i < Applications.length; i++) {
