@@ -32,7 +32,7 @@ let Applications = [{
     Technology: "<p>Firebase, moment JS, Google Fonts, CSS, Bootstrap, HTML and jQuery</p>"
 }, {
     App: "LIRI Bot",
-    Image: "./Assets/Images/TrainScheduler.png",
+    Image: "./Assets/Images/liribot.png",
     Title: "Language Interpretation and Recognition Interface Bot",
     appURL: "#",
     codeURL: "https://github.com/andersac88/LIRI_Bot" ,  
