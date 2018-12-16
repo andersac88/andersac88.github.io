@@ -40,12 +40,20 @@ let Applications = [{
     Technology: "<p>jsNode, javascript, NPMs and APIs</p>"
 }, {
     App: "Bamazon",
-    Image: "./Assets/Images/TrainScheduler.png",
+    Image: "./Assets/Images/Bamazon.png",
     Title: "Bamazon - MySQL Inquirer",
     appURL: "#",
     codeURL: "https://github.com/andersac88/Node.js-MySQL" ,  
-    Details: "<p>This is a MySQL based application that pulls displays data pulled from a database on the command line which users interact with using the inquirer NPM.",
+    Details: "<p>This is a MySQL based application that pulls displays data pulled from a database on the command line which users interact with using the inquirer NPM.</p>",
     Technology: "<p>jsNode, javascript, NPMs and MySQL</p>"
+}, {
+    App: "Friend Finder",
+    Image: "./Assets/Images/friendfinder.png",
+    Title: "Friend Finder",
+    appURL: "https://warm-fortress-99870.herokuapp.com/",
+    codeURL: "https://github.com/andersac88/Friend_Finder" ,  
+    Details: "<p>This is a full-stack web application that takes user input in the form of a survey and matches you with another user by comparing survey answers.</p>",
+    Technology: "<p>jsNode, javascript, jQuery, Bootstrap, express and Heroku</p>"
 } 
 ];
 
