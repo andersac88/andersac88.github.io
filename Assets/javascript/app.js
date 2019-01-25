@@ -56,7 +56,7 @@ let Applications = [{
     Technology: "<p>jsNode, javascript, jQuery, Bootstrap, express and Heroku</p>"
 }, {
     App: "Concert Buddy",
-    Image: "./Assets/Images/friendfinder.png",
+    Image: "./Assets/Images/ConcertBuddy.png",
     Title: "Concert Budddy",
     appURL: "https://concertbuddy2.herokuapp.com",
     codeURL: "https://github.com/andersac88/ConcertBuddy" ,  
