@@ -62,7 +62,15 @@ let Applications = [{
     codeURL: "https://github.com/andersac88/ConcertBuddy" ,  
     Details: "<p>This is a full-stack web application allows users to find like-minded individuals to attend concerts with. Just search for your concert, click I'm going! and voila! You're now connected to everyone else that's also riding solo and looking for a pal. A real-time chat room is active for every event and makes connecting a breeze. </p>",
     Technology: "<p>Node & Express MySQL DB and Sequelize Both GET and POST routes Deployed with Heroku Passport for authentication Google Maps API SongKick API Socket.IO for chatting Handlebars Bootstrap, CSS, HTML</p>"
-} 
+}, {
+    App: "Political Scraper",
+    Image: "./Assets/Images/ConcertBuddy.png",
+    Title: "Political Scraper",
+    appURL: "https://political-scraper.herokuapp.com/",
+    codeURL: "https://github.com/andersac88/News_Scraper" ,  
+    Details: "<p></p>",
+    Technology: "<p></p>"
+}  
 
 ];
 
