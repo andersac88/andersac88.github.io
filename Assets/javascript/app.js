@@ -64,12 +64,12 @@ let Applications = [{
     Technology: "<p>Node & Express MySQL DB and Sequelize Both GET and POST routes Deployed with Heroku Passport for authentication Google Maps API SongKick API Socket.IO for chatting Handlebars Bootstrap, CSS, HTML</p>"
 }, {
     App: "Political Scraper",
-    Image: "./Assets/Images/ConcertBuddy.png",
+    Image: "./Assets/Images/NewsScraper.png",
     Title: "Political Scraper",
     appURL: "https://political-scraper.herokuapp.com/",
     codeURL: "https://github.com/andersac88/News_Scraper" ,  
     Details: "<p></p>",
-    Technology: "<p></p>"
+    Technology: "<p>MongoDB, Mongoose, Node, Express</p>"
 }  
 
 ];
