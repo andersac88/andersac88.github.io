@@ -68,8 +68,8 @@ let Applications = [{
     Title: "Political Scraper",
     appURL: "https://political-scraper.herokuapp.com/",
     codeURL: "https://github.com/andersac88/News_Scraper" ,  
-    Details: "<p></p>",
-    Technology: "<p>MongoDB, Mongoose, Node, Express</p>"
+    Details: "<p>Web Application that scrapes political articles from www.politicalwire.com and stores these articles on a Mongo database.</p><p>These articles are then pulled from the database and displayed so that users can comment on each article.",
+    Technology: "<p>MongoDB, Mongoose, Node, Express, Handlebars, Axios, Cheerio, Javascript, CSS, HTML, Bootstrap, Heroku</p>"
 }  
 
 ];
