@@ -51,6 +51,11 @@ li {
 #map {
     height: 500px;
     width: auto;
+    padding-bottom: 100px;
+}
+
+.map {
+    padding-bottom: 100px;
 }
 
 .resList {
