@@ -1,162 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Andrew's Portfolio</title>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
     <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cormorant" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Cormorant"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">Andrew C. Andersen</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        About
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./index.html">Bio</a>
-                        <a class="dropdown-item" href="#">Résumé <span class="sr-only">(current)</span></a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                    </a>
-                    <div class="dropdown-menu drops" aria-labelledby="navbarDropdown">
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-            </ul>
-
-        </div>
+      <a class="navbar-brand" href="./index.html">Andrew C. Andersen</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./index.html">Bio</a>
+              <a class="dropdown-item" href="#"
+                >Résumé <span class="sr-only">(current)</span></a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Portfolio
+            </a>
+            <div
+              class="dropdown-menu drops"
+              aria-labelledby="navbarDropdown"
+            ></div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container">
-        <div class="row pt-5">
-            <div class="col-sm-3">
-                <h3><u>About</u></h3>
-                <a href="./index.html">
-                    <h4 class="myFont">Bio</h4>
-                </a>
-                <a href="#">
-                    <h4 class="myFont">Résumé</h4>
-                </a>
-            </div>
-            <div class="col-sm-9">
-                <div class="contactInfo text-center">
-                    <h3>Andrew C. Andersen</h3>
-                    <p class=m-0><a style="font-family: Cormorant" href="mailto:andersac88@gmail.com">andersac88@gmail.com</a></p>
-                    <h6 class="myFont">910 W Saint James ST, 2W, Arlington Heights, IL 60005</h6>
-                    <h6 class="myFont">(630) 699-2406</h6>
-                </div>
-                <hr>
-                <h5 class="myFont">Education</h5>
-                <h6><u>Northwestern School of Professional Studies, Sep. 2018 - Present</u></h6>
-                <p>Full Stack Web Development Bootcamp</p>
-                <br>
-                <h6><u>Miami University, 2006 - 2011</u></h6>
-                <p>Major: Psychology, Zoology; Minor: Neuroscience</p>
-                <hr>
-                <h5 class="myFont">Professional Experience</h5>
-                <h6>Community Specialists, 2011 - Present</h6>
-                Assistant Property Manager
-                <ul>
-                    <li class="resList">Oversee day-to-day operations of a 680 unit high-rise condominium.</li>
-                    <li class="resList">Respond to resident concerns/complaints in a timely and professional manner.</li>
-                    <li class="resList">Manage payroll, time-off requests, employee concerns and staff education for
-                        staff of 25 full
-                        and part-time employees.</li>
-                    <li class="resList">Review/approve owner construction requests; correspond with contractors to
-                        ensure work meets
-                        building requirements.</li>
-                    <li class="resList">Oversee all phases of capital improvement projects.</li>
-                    <li class="resList">Collaborate with on-site staff and outside contractors/service providers to
-                        maintain common
-                        elements and ensure high level resident satisfaction.</li>
-                </ul>
-                Accounts Administrator
-                <ul>
-                    <li class="resList">Manage accounts for the building’s 680 Units; bill for services, accept
-                        assessments, and track
-                        delinquencies.</li>
-                    <li class="resList">Ensure prompt payment of invoices while allocating funds to appropriate
-                        accounts based on
-                        annual budget.</li>
-                    <li class="resList">Track the financial well-being of the building.</li>
-                    <li class="resList">Provide timely and detailed updates to the Board of Directors on the financial
-                        status of the
-                        building.</li>
-                </ul>
-                Door Staff
-                <ul>
-                    <li class="resList">Ensure security of building by only granting access to the appropriate parties.</li>
-                    <li class="resList">Accept deliveries and contractors on behalf of the residents.</li>
-                </ul>
-                <hr>
-                <h5 class="myFont">Skills/Certifications</h5>
-                <ul>
-                    <li class="resList" class="resList">Proficient in HTML, CSS, Javascript, JQuery and Bootstrap</li>
-                    <li class="resList">Certified Manager of Community Associations (CMCA)</li>
-                    <li class="resList">Association Management Specialist (AMS)</li>
-                    <li class="resList">Proficient with Jenark Property Management Software</li>
-                    <li class="resList">Experienced with Microsoft Word, PowerPoint, and Excel</li>
-                </ul>
-            </div>
-        </div>
+      <div class="row justify-content-center">Andrew C. Andersen</div>
+      <div class="row justify-content-center">Arlington Heights, IL 60005</div>
+      <div class="row justify-content-center">
+        Phone: (630) 699-2406 | E-Mail: andrew@andrewcandersen.com
+      </div>
+      <div class="row justify-content-center">
+        Website: andrew@andrewcandersen.com | LinkedIn:
+        www.linkedin.com/in/andrewcandersen | GitHub:
+        https://github.com/andersac88
+      </div>
+      <br />
+      <div class="row justify-content-center">Summary</div>
+      <p>
+        Full Stack Web Developer with a background in Management and customer
+        service. Passionate about learning and accustomed to working in a high
+        paced and stressful environment. Known for an attention to detail and
+        ability to meet deadlines.
+      </p>
+      <div class="row justify-content-center">Technical Skills</div>
+
+      <p>
+        Languages: Javascript and PHP<br />
+        Applications: React, JQuery, MongoDB, Handlebars, Express and MySQL
+      </p>
+
+      <div class="row justify-content-center">Projects</div>
+      <div class="row">
+        Concert Buddy | Github:
+        https://github.com/sequelizers-2-the-sql/Concert-Buddy | URL:
+        https://concertbuddy2point0.herokuapp.com/
+        <ul>
+          <li>
+            Web Application designed to help concert lovers find nearby concerts
+            or concerts for a specific artist and put users in contact with
+            other concert goers.
+          </li>
+          <li>Javascript, Express, NodeJS, MongoDB, GoogleMaps API & React</li>
+        </ul>
+      </div>
+      <div class="row">
+        Political Scraper | Github: https://github.com/andersac88/News_Scraper |
+        URL: https://political-scraper.herokuapp.com/
+        <ul>
+          <li>
+            Web application that scrapes political news and allows users to
+            comment on posted articles.
+          </li>
+          <li>
+            Javascript, Express, NodeJS, MongoDB, jQuery, Handlebars and Cheerio
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        Friend Finder | Github: https://github.com/andersac88/Friend_Finder |
+        URL: https://warm-fortress-99870.herokuapp.com/
+        <ul>
+          <li>
+            A social network-like application where users are paired with other
+            users based on responses to a provided survey.
+          </li>
+          <li>Javascript, Express, NodeJS, jQuery</li>
+        </ul>
+      </div>
+      <div class="row justify-content-center">Experience</div>
+      <div class="row">
+        <div class="col-sm-3">Independent Contractor</div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3 text-right">2019 – Present</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">DV Trading LLC</div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3 text-right">Chicago, IL</div>
+      </div>
+      <div class="row">
+        <ul>
+          <li>
+            Collaborate with Project Manager to update a recently acquired PHP
+            based web application.
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">Assistant Property Manager</div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3 text-right">2013 – Present</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">Community Specialists</div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3 text-right">Chicago, IL</div>
+      </div>
+      <div class="row">
+        <ul>
+          <li>
+            Oversee the day-to-day operations of a 678 unit high-rise
+            condominium
+          </li>
+          <li>
+            Collaborate with on-site staff and outside contractors/service
+            providers to maintain common elements and ensure high level resident
+            satisfaction.
+          </li>
+          <li>
+            Manage payroll, time-off requests, employee concerns and staff
+            education for staff of 25 full and part-time employees.
+          </li>
+        </ul>
+      </div>
+
+      <div class="row justify-content-center">Education</div>
+      <div>Bootcamp Certificate: Northwestern University, Chicago, IL</div> 
+      <div>A 48-week
+      intensive program focused on gaining web development skills in HTML, CSS,
+      JQuery, JavaScript, MySQL Databases, MongoDB, Express, NodeJS and React.</div>
+      <br>  
+      <div class>Bachelors of Arts: Miami University, Oxford, OH </div>
+    <div class="row"> <ul><li>Major: Psychology,
+      Zoology; Minor: Neuroscience</li></ul>
+    </div>
     </div>
 
     <div class="card-footer text-center">
-        <a class="linkedin" href="https://www.linkedin.com/in/andrew-andersen-5149323a"><i class="fab fa-linkedin-in linkedin"></i><span
-                class="linkedinText">Visit Andrew's Linkedin Profile</span></a>
-        <a class="resume" href="./Assets/Documents/Resume.docx.pdf" download="Andersen Résumé"><i class="fas fa-file-download"></i><span
-                class="resumeText">Download Andrew's Résumé</span></a>
-        <a class="resume" href="https://github.com/andersac88/"><i class="fab fa-github"></i><span class="resumeText">Visit
-                Andrew's Github</span></a>
-        <a class="resume" href="mailto:andersac88@gmail.com"> <i class="fas fa-envelope"></i><span class="resumeText">E-mail
-                Andrew</span></a>
-
+      <a
+        class="linkedin"
+        href="https://www.linkedin.com/in/andrew-andersen-5149323a"
+        ><i class="fab fa-linkedin-in linkedin"></i
+        ><span class="linkedinText">Visit Andrew's Linkedin Profile</span></a
+      >
+      <a
+        class="resume"
+        href="./Assets/Documents/Resume.docx.pdf"
+        download="Andersen Résumé"
+        ><i class="fas fa-file-download"></i
+        ><span class="resumeText">Download Andrew's Résumé</span></a
+      >
+      <a class="resume" href="https://github.com/andersac88/"
+        ><i class="fab fa-github"></i
+        ><span class="resumeText">Visit Andrew's Github</span></a
+      >
+      <a class="resume" href="mailto:andersac88@gmail.com">
+        <i class="fas fa-envelope"></i
+        ><span class="resumeText">E-mail Andrew</span></a
+      >
     </div>
-
 
     <!------------------        Script         --------------------->
     <!--Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Google Maps-->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-nghbSyP_qhRsJtnhK7NZrne-JpaWaeQ&callback=initMap">
-
-
-
-    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-nghbSyP_qhRsJtnhK7NZrne-JpaWaeQ&callback=initMap"
+    ></script>
     <!--app.js-->
     <script src="./Assets/javascript/app.js"></script>
     <!--portfolio.js-->
     <script src="./Assets/javascript/portfolio.js"></script>
     <!--Bootstrap-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

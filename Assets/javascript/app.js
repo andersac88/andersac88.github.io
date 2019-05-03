@@ -166,9 +166,7 @@ $(document).on("click", ".application", function(){
     renderCodeButton(scope);
     renderAppButton(scope);
 });   
-// $(document).on("click", ".application", renderText);
-// $(document).on("click", ".application", renderCodeButton);
-// $(document).on("click", ".application", renderAppButton);
+
 $(document).on("click", ".hyperlink", function(){
     window.location=($(this).attr("data-URL"))
 })
