@@ -125,6 +125,7 @@ li {
     font-size: 16px;
     font-family: 'Source Serif Pro', serif !important;
     text-decoration: none;
+    color: #212529;
 }
 
 .n3 {
@@ -135,6 +136,8 @@ li {
 .resume {
     font-family: 'Source Serif Pro', serif !important;
     font-size: 16px !important;
+    text-decoration: none;
+    color: #212529;
 }
 
 .resume1 {
