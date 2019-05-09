@@ -50,13 +50,9 @@ li {
 
 .resume0 {
     font-family: 'Source Serif Pro', serif !important;
-    font-size: 16px !important;
+    font-size: 15px !important;
 }
 
-#res {
-    font-family: 'Cormorant', serif;
-    font-size: 16px; 
-}
 
 #map {
     height: 500px;
@@ -67,11 +63,6 @@ li {
 .map {
     padding-bottom: 100px;
 }
-
-.resList {
-    font-size: 18px;
-}
-
 
 .resume, .linkedin {
     position: relative;
