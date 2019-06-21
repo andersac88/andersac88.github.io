@@ -122,13 +122,6 @@ function renderText(scope) {
     $(".tech").append(d);
 }
 
-// function renderDetails(scope) {
-//     let applicationDescription = $(scope).attr("data-description");
-//     localStorage.setItem("description", applicationDescription);
-//     $(".details").html(applicationDescription);
-// }
-
-
 function renderImage (scope) {
     $(".appPicture").empty();
     let applicationPic = $(scope).attr("data-image")
@@ -152,31 +145,52 @@ function renderCodeButton (scope) {
 }
 
 function renderAppButton (scope) {
+    $('[data-toggle="popover"]').popover();   
     let btnURL = $(scope).attr("data-URL")
     let urlBTN = $("<button>");
     localStorage.setItem("link", btnURL);
+    console.log(btnURL)
+    if (btnURL === "#") {
+        console.log("yo")
+        urlBTN.attr("data-URL", btnURL)
+        urlBTN.attr("type", "button");
+        urlBTN.attr("data-toggle", "popover");
+        urlBTN.attr("data-trigger", "focus");
+        urlBTN.attr("test", "hi");
+        urlBTN.attr("data-content", "This is a node based application and cannot be run through the browser.")
+        urlBTN.addClass("btn btn-outline-dark m-3 hyperlink")
+        urlBTN.text("Try App")
+        $(".appBtn").append(urlBTN);
+        $('[data-toggle="popover"]').popover()
+    } else {
     urlBTN.attr("data-URL", btnURL)
     urlBTN.attr("type", "button");
     urlBTN.addClass("btn btn-outline-dark m-3 hyperlink")
     urlBTN.text("Try App")
     $(".appBtn").append(urlBTN);
 }
-
+}
 
 appList();
 dropList();
 $(document).on("click", ".application", function(){
     let scope = this
-    console.log("Hi")
     localStorage.clear();
     renderImage(scope);
     renderText(scope);
     renderCodeButton(scope);
     renderAppButton(scope);
-});   
+}); 
 
 $(document).on("click", ".hyperlink", function(){
-    window.location=($(this).attr("data-URL"))
+    let url = $(this).attr("data-URL")
+    console.log(url);
+    if (url === "#") {
+
+        console.log("hi")
+    } else {
+    window.location=url;
+    }
 })
 $(document).on("click", ".coder", function(){
     window.location=($(this).attr("data-code"))

@@ -15,13 +15,6 @@ function renderPage() {
     codeButton.attr("type", "button");
     codeButton.text("View Code")
     $(".appBtn").append(codeButton);
-    let buttonLink = localStorage.getItem("link");
-    let linkBTN = $("<button>");
-    linkBTN.attr("data-URL", buttonLink);
-    linkBTN.addClass("btn btn-outline-dark m-3 hyperlink")
-    linkBTN.attr("type", "button");
-    linkBTN.text("Try App")
-    $(".appBtn").append(linkBTN);
     let appDescript = localStorage.getItem("description");
     let appDescription = $("<div>");
     appDescription.html(appDescript);
@@ -30,5 +23,25 @@ function renderPage() {
     let appTechnology = $("<div>");
     appTechnology.html(appTech);
     $(".tech").append(appTechnology);
+    let buttonLink = localStorage.getItem("link");
+    if (buttonLink === "#") {
+    let linkBTN = $("<button>");
+    linkBTN.attr("data-URL", buttonLink);
+    linkBTN.addClass("btn btn-outline-dark m-3 hyperlink")
+    linkBTN.attr("type", "button");
+    linkBTN.attr("data-toggle", "popover");
+    linkBTN.attr("data-trigger", "focus");
+    linkBTN.attr("test", "hi");
+    linkBTN.attr("data-content", "This is a node based application and cannot be run through the browser.")
+    linkBTN.text("Try App")
+    $(".appBtn").append(linkBTN);   
+    $('[data-toggle="popover"]').popover()
+    } else {
+    let linkBTN = $("<button>");
+    linkBTN.attr("data-URL", buttonLink);
+    linkBTN.addClass("btn btn-outline-dark m-3 hyperlink")
+    linkBTN.attr("type", "button");
+    linkBTN.text("Try App")
+    $(".appBtn").append(linkBTN);
+    }
 }
-
