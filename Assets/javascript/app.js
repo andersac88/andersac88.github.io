@@ -108,28 +108,32 @@ function renderText(scope) {
    $(".tech").empty();
    $(".details").empty();
     let applicationTitle = $(scope).attr("data-title");
+    localStorage.setItem("title", applicationTitle);
     $(".title").text(applicationTitle);
     let c = $("<div>");
     let applicationDescription = $(scope).attr("data-description");
+    localStorage.setItem("description", applicationDescription);
     c.html(applicationDescription)
     $(".details").append(c);
     let d = $("<div>");
     let applicationTechnology = $(scope).attr("data-tech")
+    localStorage.setItem("tech", applicationTechnology);
     d.html(applicationTechnology);
     $(".tech").append(d);
 }
 
-function renderDetails(scope) {
-    let applicationDescription = $(scope).attr("data-description");
-    $(".details").html(applicationDescription);
-}
+// function renderDetails(scope) {
+//     let applicationDescription = $(scope).attr("data-description");
+//     localStorage.setItem("description", applicationDescription);
+//     $(".details").html(applicationDescription);
+// }
 
 
 function renderImage (scope) {
     $(".appPicture").empty();
-    console.log(scope);
     let applicationPic = $(scope).attr("data-image")
     let img = $("<img>");
+    localStorage.setItem("image", applicationPic);
     img.addClass("appPic")
     img.attr("src", applicationPic);
     $(".appPicture").append(img);
@@ -139,6 +143,7 @@ function renderCodeButton (scope) {
     $(".appBtn").empty();
     let btnCode = $(scope).attr("data-code")
     let codeBTN = $("<button>");
+    localStorage.setItem("code", btnCode);
     codeBTN.attr("data-code", btnCode)
     codeBTN.addClass("btn btn-outline-dark m-3 coder")
     codeBTN.attr("type", "button");
@@ -149,6 +154,7 @@ function renderCodeButton (scope) {
 function renderAppButton (scope) {
     let btnURL = $(scope).attr("data-URL")
     let urlBTN = $("<button>");
+    localStorage.setItem("link", btnURL);
     urlBTN.attr("data-URL", btnURL)
     urlBTN.attr("type", "button");
     urlBTN.addClass("btn btn-outline-dark m-3 hyperlink")
@@ -161,6 +167,8 @@ appList();
 dropList();
 $(document).on("click", ".application", function(){
     let scope = this
+    console.log("Hi")
+    localStorage.clear();
     renderImage(scope);
     renderText(scope);
     renderCodeButton(scope);
