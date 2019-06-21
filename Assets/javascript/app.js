@@ -70,9 +70,7 @@ let Applications = [{
     codeURL: "https://github.com/andersac88/News_Scraper" ,  
     Details: "<p>Web Application that scrapes political articles from www.politicalwire.com and stores these articles on a Mongo database.</p><p>These articles are then pulled from the database and displayed so that users can comment on each article.",
     Technology: "<p>MongoDB, Mongoose, Node, Express, Handlebars, Axios, Cheerio, Javascript, CSS, HTML, Bootstrap, Heroku</p>"
-}  
-
-];
+}];
 
 function appList() {
     for (let i = 0; i < Applications.length; i++) {
@@ -94,6 +92,7 @@ function dropList() {
         let b = $("<a>")
         b.text(`${Applications[j].App}`)
         b.addClass("dropdown-item application dropItem")
+        b.attr("href", "./portfolio.html")
         b.attr("data-title", `${Applications[j].Title}`)
         b.attr("data-description", `${Applications[j].Details}`)
         b.attr("data-tech", `${Applications[j].Technology}`)
@@ -151,12 +150,11 @@ function renderAppButton (scope) {
     localStorage.setItem("link", btnURL);
     console.log(btnURL)
     if (btnURL === "#") {
-        console.log("yo")
         urlBTN.attr("data-URL", btnURL)
         urlBTN.attr("type", "button");
         urlBTN.attr("data-toggle", "popover");
         urlBTN.attr("data-trigger", "focus");
-        urlBTN.attr("test", "hi");
+        urlBTN.attr("data-placement", "right");
         urlBTN.attr("data-content", "This is a node based application and cannot be run through the browser.")
         urlBTN.addClass("btn btn-outline-dark m-3 hyperlink")
         urlBTN.text("Try App")
@@ -183,15 +181,9 @@ $(document).on("click", ".application", function(){
 }); 
 
 $(document).on("click", ".hyperlink", function(){
-    let url = $(this).attr("data-URL")
-    console.log(url);
-    if (url === "#") {
+   window.location = $(this).attr("data-URL")
+});
 
-        console.log("hi")
-    } else {
-    window.location=url;
-    }
-})
 $(document).on("click", ".coder", function(){
     window.location=($(this).attr("data-code"))
-})
+});

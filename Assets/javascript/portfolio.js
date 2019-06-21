@@ -21,9 +21,3 @@
         localStorage.setItem("description", descript);
         localStorage.setItem("tech", tech);
       };
-  
-function amendDropList () {
-    $(".dropItem").attr("href", "./portfolio.html")
-}
-amendDropList();
-    
