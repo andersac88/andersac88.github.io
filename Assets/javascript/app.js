@@ -148,7 +148,6 @@ function renderAppButton (scope) {
     let btnURL = $(scope).attr("data-URL")
     let urlBTN = $("<button>");
     localStorage.setItem("link", btnURL);
-    console.log(btnURL)
     if (btnURL === "#") {
         urlBTN.attr("data-URL", btnURL)
         urlBTN.attr("type", "button");
