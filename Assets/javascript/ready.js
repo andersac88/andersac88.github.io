@@ -11,7 +11,7 @@ function renderPage() {
     let buttonCode = localStorage.getItem("code");
     let codeButton = $("<button>");
     codeButton.attr("data-code", buttonCode);
-    codeButton.addClass("btn btn-outline-dark m-3 coder")
+    codeButton.addClass("btn btn-outline-light m-3 coder")
     codeButton.attr("type", "button");
     codeButton.text("View Code")
     $(".appBtn").append(codeButton);
@@ -27,7 +27,7 @@ function renderPage() {
     if (buttonLink === "#") {
     let linkBTN = $("<button>");
     linkBTN.attr("data-URL", buttonLink);
-    linkBTN.addClass("btn btn-outline-dark m-3 hyperlink")
+    linkBTN.addClass("btn btn-outline-light m-3 hyperlink")
     linkBTN.attr("type", "button");
     linkBTN.attr("data-toggle", "popover");
     linkBTN.attr("data-trigger", "focus");
@@ -39,7 +39,7 @@ function renderPage() {
     } else {
     let linkBTN = $("<button>");
     linkBTN.attr("data-URL", buttonLink);
-    linkBTN.addClass("btn btn-outline-dark m-3 hyperlink")
+    linkBTN.addClass("btn btn-outline-light m-3 hyperlink")
     linkBTN.attr("type", "button");
     linkBTN.text("Try App")
     $(".appBtn").append(linkBTN);

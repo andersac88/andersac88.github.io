@@ -1,17 +1,20 @@
 html, body {
-    background-image: url(./Images/gravel.png)
+    background-color: black;
 }
 
 .navbar, .navbar-brand {
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Volkhov', serif;
     font-size: 25px;
     background-color: white !important;
 }
 
+i {
+    color: white;
+}
 
 a {
-    color: inherit !important;
-    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    font-family: 'Volkhov', serif;
 }
 
 span {
@@ -21,8 +24,8 @@ span {
 
 .myFont {
     text-decoration: none;
-    color: #212529;
-    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    font-family: 'Volkhov', serif;
 }
 
 .fab, .fas {
@@ -31,7 +34,8 @@ span {
 }
 
 h3, h5 {
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Volkhov', serif;
+    color: white;
 }
 
 h6 {
@@ -42,6 +46,7 @@ h6 {
 p {
     font-family: 'Cormorant', serif;
     font-size: 20px;
+    color: white;
 }
 
 li {
@@ -118,25 +123,37 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 28px;
+    color: white;
 }
 
 .n2 {
     font-size: 16px;
     font-family: 'Source Serif Pro', serif !important;
+    color: white;
 }
 
 .n3 {
     font-size: 14px;
     font-family: 'Source Serif Pro', serif !important;
+    color: white;
 }
 
 .resume {
     font-family: 'Source Serif Pro', serif !important;
     font-size: 16px !important;
+    color: white;
 }
 
 .resume1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: white;
 }
 
+.resume0 {
+    color: white;
+}
+
+.nav-link {
+    color: black !important;
+}
