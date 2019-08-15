@@ -1,19 +1,31 @@
 html, body {
-    background-color: black;
+    background-image: url(../Assets/Images/stockvault-polygonal-mosaic-background176202.jpg);
 }
 
-.navbar, .navbar-brand {
+.navbar {
     font-family: 'Volkhov', serif;
     font-size: 25px;
-    background-color: white !important;
+    background-color: rgba(0,0,0,.03) !important;
+    border-bottom: 1px solid rgba(0,0,0,.125)
+}
+
+.navbar-brand {   
+     font-family: 'Volkhov', serif;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7) !important;
+
 }
 
 i {
-    color: white;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dropdown-menu { 
+    background-color: white; 
 }
 
 a {
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
     font-family: 'Volkhov', serif;
 }
 
@@ -24,7 +36,7 @@ span {
 
 .myFont {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.7) !important;
     font-family: 'Volkhov', serif;
 }
 
@@ -35,7 +47,7 @@ span {
 
 h3, h5 {
     font-family: 'Volkhov', serif;
-    color: white;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 h6 {
@@ -46,7 +58,7 @@ h6 {
 p {
     font-family: 'Cormorant', serif;
     font-size: 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 li {
@@ -123,37 +135,37 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 28px;
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .n2 {
     font-size: 16px;
     font-family: 'Source Serif Pro', serif !important;
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .n3 {
     font-size: 14px;
     font-family: 'Source Serif Pro', serif !important;
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .resume {
     font-family: 'Source Serif Pro', serif !important;
     font-size: 16px !important;
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .resume1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .resume0 {
-    color: white;
+    color: rgba(255, 255, 255, 0.7)
 }
 
 .nav-link {
-    color: black !important;
+    color: rgba(255, 255, 255, 0.5) !important;
 }
