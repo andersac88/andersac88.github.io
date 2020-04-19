@@ -77,7 +77,8 @@ let Applications = [{
     appURL: "https://political-scraper.herokuapp.com/",
     codeURL: "https://github.com/andersac88/News_Scraper" ,  
     Details: "<p>React website for a small business that has a contact form which utilizes nodemailer.</p>",
-    Technology: "<p>Nodemailer, Node, Express, Axios, Javascript, CSS, HTML, Bootstrap, Heroku</p>"}];
+    Technology: "<p>Nodemailer, Node, Express, Axios, Javascript, CSS, HTML, Bootstrap, Heroku</p>"}
+];
 
 function appList() {
     for (let i = 0; i < Applications.length; i++) {
