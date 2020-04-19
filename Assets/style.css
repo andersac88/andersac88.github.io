@@ -1,5 +1,7 @@
 html, body {
-    background-image: url(../Assets/Images/stockvault-polygonal-mosaic-background176202.jpg);
+    background-image: url("../Assets/Images/lightbulb.jpg");
+    background-position: center;
+
 }
 
 .navbar {

@@ -68,9 +68,16 @@ let Applications = [{
     Title: "Political Scraper",
     appURL: "https://political-scraper.herokuapp.com/",
     codeURL: "https://github.com/andersac88/News_Scraper" ,  
-    Details: "<p>Web Application that scrapes political articles from www.politicalwire.com and stores these articles on a Mongo database.</p><p>These articles are then pulled from the database and displayed so that users can comment on each article.",
+    Details: "<p>Web Application that scrapes political articles from www.politicalwire.com and stores these articles on a Mongo database.</p><p>These articles are then pulled from the database and displayed so that users can comment on each article.</p>",
     Technology: "<p>MongoDB, Mongoose, Node, Express, Handlebars, Axios, Cheerio, Javascript, CSS, HTML, Bootstrap, Heroku</p>"
-}];
+}, {
+    App: "Peerless Vending",
+    Image: "./Assets/Images/NewsScraper.png",
+    Title: "Peerless Vending",
+    appURL: "https://political-scraper.herokuapp.com/",
+    codeURL: "https://github.com/andersac88/News_Scraper" ,  
+    Details: "<p>React website for a small business that has a contact form which utilizes nodemailer.</p>",
+    Technology: "<p>Nodemailer, Node, Express, Axios, Javascript, CSS, HTML, Bootstrap, Heroku</p>"];
 
 function appList() {
     for (let i = 0; i < Applications.length; i++) {
