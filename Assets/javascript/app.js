@@ -17,7 +17,7 @@ let Applications = [{
 }, {
     App: "Trivia",
     Image: "./Assets/Images/WW2 Trivia.png",
-    Title: "Medieval Trivia",
+    Title: "WWII Trivia",
     appURL: "https://andersac88.github.io/TriviaGame/",
     codeURL: "https://github.com/andersac88/TriviaGame/",
     Details: "<p>This is a timed trivia game.</p><p>Users are presented with a question and four answers. They are given 15 seconds to select an answer.</p><p>If an incorrect answer is selected, the user is notified that their selection was incorrect and the correct answer will be displayed along with an image related to the correct answer. If a correct answer is selected, the user is notified that they were correct and an image related to the correct answer will be display. If the user fails to make a selection within the alloted 15 seconds, they will be notified that time has expired and the correct answer, along with an image related to the correct answer, will be displayed.</p><p>Once the user has been presented with all of the questions the game ends and the total number of correct answers, incorrect answers and unanswered questions will be displayed, along with a replay button.</p>",
