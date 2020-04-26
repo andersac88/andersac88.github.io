@@ -1,19 +1,22 @@
 html, body {
-    background-image: url("../Assets/Images/herringbone.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../Assets/Images/double-bubble.png");
 
+}
+
+.card-footer {
+    background-color: white;
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,0.25);
 }
 
 .navbar {
     font-family: 'Volkhov', serif;
     font-size: 25px;
-    background-color: rgba(0,0,0,.03) !important;
-    border-bottom: 1px solid rgba(0,0,0,.125)
+    background-color: white!important;
+    box-shadow: 0 2px 4px 2px rgba(0,0,0,0.25);
 }
 
 .navbar-brand {   
-     font-family: 'Volkhov', serif;
+    font-family: 'Volkhov', serif;
     font-size: 25px;
     color: black;
 }
@@ -23,7 +26,7 @@ i {
 }
 
 .dropdown-menu { 
-    background-color: rgba(255, 255, 255, 0.7)
+    background-color: white;
 }
 
 a {
@@ -93,7 +96,7 @@ li {
     width: 200px;
     opacity: .7;
     background-color: black;
-    color: #fff;
+    color: white;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -118,6 +121,11 @@ li {
     width: 100%;
     margin-top: 20px;
 }
+
+.app {
+    background-color: white;
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.15);
 
 .andyImg {
     height: 250px;

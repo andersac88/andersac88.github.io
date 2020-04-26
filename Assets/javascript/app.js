@@ -145,7 +145,7 @@ function renderCodeButton (scope) {
     let codeBTN = $("<button>");
     localStorage.setItem("code", btnCode);
     codeBTN.attr("data-code", btnCode)
-    codeBTN.addClass("btn btn-outline-light m-3 coder")
+    codeBTN.addClass("btn btn-light m-3 coder")
     codeBTN.attr("type", "button");
     codeBTN.text("View Code")
     $(".appBtn").append(codeBTN);
@@ -163,14 +163,14 @@ function renderAppButton (scope) {
         urlBTN.attr("data-trigger", "focus");
         urlBTN.attr("data-placement", "right");
         urlBTN.attr("data-content", "This is a node based application and cannot be run through the browser.")
-        urlBTN.addClass("btn btn-outline-light m-3 hyperlink")
+        urlBTN.addClass("btn btn-light m-3 hyperlink")
         urlBTN.text("Try App")
         $(".appBtn").append(urlBTN);
         $('[data-toggle="popover"]').popover()
     } else {
     urlBTN.attr("data-URL", btnURL)
     urlBTN.attr("type", "button");
-    urlBTN.addClass("btn btn-outline-light m-3 hyperlink")
+    urlBTN.addClass("btn btn-light m-3 hyperlink")
     urlBTN.text("Try App")
     $(".appBtn").append(urlBTN);
 }
