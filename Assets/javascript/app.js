@@ -72,10 +72,10 @@ let Applications = [{
     Technology: "<p>MongoDB, Mongoose, Node, Express, Handlebars, Axios, Cheerio, Javascript, CSS, HTML, Bootstrap, Heroku</p>"
 }, {
     App: "Peerless Vending",
-    Image: "./Assets/Images/NewsScraper.png",
+    Image: "./Assets/Images/Peerless.png",
     Title: "Peerless Vending",
-    appURL: "https://political-scraper.herokuapp.com/",
-    codeURL: "https://github.com/andersac88/News_Scraper" ,  
+    appURL: "www.peerlessvending.com",
+    codeURL: "https://github.com/andersac88/PeerlessVending" ,  
     Details: "<p>React website for a small business that has a contact form which utilizes nodemailer.</p>",
     Technology: "<p>Nodemailer, Node, Express, Axios, Javascript, CSS, HTML, Bootstrap, Heroku</p>"}
 ];
