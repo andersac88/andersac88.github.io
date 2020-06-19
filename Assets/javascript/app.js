@@ -74,7 +74,7 @@ let Applications = [{
     App: "Peerless Vending",
     Image: "./Assets/Images/Peerless.png",
     Title: "Peerless Vending",
-    appURL: "www.peerlessvending.com",
+    appURL: "https://www.peerlessvending.com/",
     codeURL: "https://github.com/andersac88/PeerlessVending" ,  
     Details: "<p>React website for a small business that has a contact form which utilizes nodemailer.</p>",
     Technology: "<p>Nodemailer, Node, Express, Axios, Javascript, CSS, HTML, Bootstrap, Heroku</p>"}
