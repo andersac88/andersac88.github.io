@@ -95,6 +95,12 @@ li {
     display: inline-block;
 }
 
+.column-left {
+    background-color: white;
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.15);
+}
+
 .resumeText, .linkedinText {
     visibility: hidden;
     width: 200px;

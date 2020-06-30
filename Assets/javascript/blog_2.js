@@ -6,7 +6,7 @@
         let date = $(this).attr("data-date");
   
         // Clear localStorage
-        localStorage.clear();
+        //localStorage.clear();
   
         // Store all content into localStorage
         localStorage.setItem("text", text);

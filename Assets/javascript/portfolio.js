@@ -11,7 +11,7 @@
 
   
         // Clear localStorage
-        localStorage.clear();
+        //localStorage.clear();
   
         // Store all content into localStorage
         localStorage.setItem("title", title);
