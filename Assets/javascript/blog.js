@@ -1,9 +1,11 @@
 let blogPosts = [{
-    Date: "June 6, 1944",
-    Text: "You are about to embark upon the Great Crusade, toward which we have striven these many months. The eyes of the world are upon you. The hopes and prayers of liberty-loving people everywhere march with you. In company with our brave Allies and brothers-in-arms on other Fronts, you will bring about the destruction of the German war machine, the elimination of Nazi tyranny over the oppressed peoples of Europe, and security for ourselves in a free world. Your task will not be an easy one. Your enemy is well trained, well equipped and battle hardened. He will fight savagely. But this is the year 1944! Much has happened since the Nazi triumphs of 1940-41. The United Nations have inflicted upon the Germans great defeats, in open battle, man-to-man. Our air offensive has seriously reduced their strength in the air and their capacity to wage war on the ground. Our Home Fronts have given us an overwhelming superiority in weapons and munitions of war, and placed at our disposal great reserves of trained fighting men. The tide has turned! The free men of the world are marching together to Victory! I have full confidence in your courage and devotion to duty and skill in battle. We will accept nothing less than full Victory! Good luck! And let us beseech the blessing of Almighty God upon this great and noble undertaking."
-}, {
-    Date: "December 7, 1941",
-    Text: "YESTERDAY, December 7, 1941 a date which will live in infamy the United States of America was suddenly and deliberately attacked by naval and air forces of the Empire of Japan.The United States was at peace with that Nation and, at the solicitation of Japan, was still in conversation with its Government and its Emperor looking toward the maintenance of peace in the Pacific. Indeed, one hour after Japanese air squadrons had commenced bombing in the American Island of Oahu, the Japanese Ambassador to the United States and his colleague delivered to our Secretary of State a formal reply to a recent American message. And while this reply stated that it seemed useless to continue the existing diplomatic negotiations, it contained no threat or hint of war or of armed attack.It will be recorded that the distance of Hawaii from Japan makes it obvious that the attack was deliberately planned many days or even weeks ago. During the intervening time the Japanese Government has deliberately sought to deceive the United States by false statements and expressions of hope for continued peace.The attack yesterday on the Hawaiian Islands has caused severe damage to American naval and military forces. I regret to tell you that very many American lives have been lost. In addition American ships have been reported torpedoed on the high seas between San Francisco and Honolulu."
+    Date: "June 30, 2020",
+    Text: `<p>I have never written a blog before but in light of recent events I feel compelled to write down my thoughts. I hope that this will assist in not only clearing my head, but also in reflecting on my perception of the world that surrounds me... I also hope that this doesn't end up as another webpage dedicated to unintelligible rantings. Let's begin...</p>
+    <p>I consider the reluctance to wear face masks to be one of the most absurd happenings in this eternity that is 2020.</p>
+    <p>Facts and science aside, basic common sense should be enough to convince someone that masks are beneficial in the fight against a global pandemic.</p>
+    <p>I understand that they are uncomfortable but that seems like a small sacrifice if it could in anyway contribute to preventing a needless death. I happened across a posting recently that worded my thoughts quite succinctly... "if the experts are right, wearing a mask could aid in preventing the spread of a deadly contagion. If the experts are wrong, you are wearing a piece of fabric across your face." Honestly, how has this become a discussion? </p></p>
+    <p>As for the ludicrous argument that masks are somehow an infringement of one's freedoms, the Supreme Court has already ruled that “liberty” under the Constitution does not give individuals the right to make decisions about their own health in instances when those decisions could endanger others.</p>
+    <p>I find solace in the fact that the majority think as I do on this subject. While I am also I live in a State, Illinois, who's response to COVID-19 has appeared effective, as of today, at "flattening the curve"</p>`
 }]
 
 
@@ -37,7 +39,7 @@ function renderContent(scope) {
      localStorage.setItem("text", blogText);
      localStorage.setItem("date", blogDate)
      $(".date").text(blogDate);
-     $(".blogs").text(blogText);
+     $(".blogs").html(blogText);
  }
 
 blogDrop();

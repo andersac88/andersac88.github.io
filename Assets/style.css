@@ -95,7 +95,7 @@ li {
     display: inline-block;
 }
 
-.column-left {
+.column-left, .column-right {
     background-color: white;
     border-radius: .25rem;
     border: 1px solid rgba(0,0,0,.15);
