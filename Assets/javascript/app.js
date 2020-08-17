@@ -139,7 +139,6 @@ function dropList() {
 }
 
 function renderText(scope) {
-	console.log('hello');
 	$('.tech').empty();
 	$('.details').empty();
 	let applicationTitle = $(scope).attr('data-title');
